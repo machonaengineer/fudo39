@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>採用・転職・不動産の無料相談窓口｜求人広告・人材紹介・賃貸売買まで</title>
+  <meta name="description" content="求人広告・ATS・AI面接・採用代行・人材紹介・転職支援・不動産賃貸売買まで、最適な専門パートナーにつなぐ相談窓口。人事担当者、採用代行、求職者、採用企業、不動産相談までLINEで無料相談。" />
+  <meta name="robots" content="index,follow" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="採用・人材・不動産の相談窓口" />
+  <meta property="og:description" content="求人広告、人材紹介、転職支援、不動産まで。誰に相談すべきか分からない課題を、最適な専門パートナーにつなぎます。" />
+  <meta property="og:locale" content="ja_JP" />
+  <meta name="theme-color" content="#0B1220" />
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{
+      --bg:#07111f;
+      --bg2:#0b1628;
+      --bg3:#101d33;
+      --card:#0f1b2d;
+      --card2:#13243b;
+      --blue:#2f80ed;
+      --blue2:#00a3ff;
+      --cyan:#30d5c8;
+      --green:#06C755;
+      --gold:#d7b46a;
+      --text:#f5f7fb;
+      --muted:#a8b3c7;
+      --muted2:#74819a;
+      --line:rgba(255,255,255,.09);
+      --line2:rgba(47,128,237,.32);
+      --shadow:0 22px 70px rgba(0,0,0,.34);
+      --radius:24px;
+      --max:1180px;
+    }
+    html{scroll-behavior:smooth}
+    body{font-family:"Meiryo","メイリオ","Yu Gothic","游ゴシック",Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.75;font-size:15px;overflow-x:hidden}
+    body::before{content:"";position:fixed;inset:0;z-index:-2;background:radial-gradient(circle at 18% 8%,rgba(47,128,237,.28),transparent 30%),radial-gradient(circle at 86% 12%,rgba(48,213,200,.16),transparent 30%),radial-gradient(circle at 50% 100%,rgba(215,180,106,.12),transparent 36%),linear-gradient(180deg,#07111f 0%,#080e1a 100%)}
+    body::after{content:"";position:fixed;inset:0;z-index:-1;background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:72px 72px;mask-image:linear-gradient(to bottom,black,transparent 85%)}
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;display:block}
+    .container{max-width:var(--max);margin:0 auto;padding:0 22px}
+    .nav{position:sticky;top:0;z-index:50;background:rgba(7,17,31,.82);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}
+    .nav-inner{max-width:1240px;margin:0 auto;padding:14px 22px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+    .brand{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.04em}
+    .brand-mark{width:34px;height:34px;border-radius:12px;background:linear-gradient(135deg,var(--blue),var(--cyan));display:grid;place-items:center;box-shadow:0 10px 30px rgba(47,128,237,.35);font-size:18px}
+    .brand small{display:block;color:var(--muted);font-weight:700;font-size:10px;letter-spacing:.12em;margin-top:-3px}
+    .nav-links{display:flex;align-items:center;gap:18px;color:var(--muted);font-size:13px}
+    .nav-links a:hover{color:#fff}
+    .nav-cta,.line-btn,.primary-btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border-radius:999px;font-weight:800;white-space:nowrap;transition:.2s ease;cursor:pointer;border:0}
+    .nav-cta{background:var(--green);color:#fff;padding:10px 18px;font-size:13px;box-shadow:0 8px 24px rgba(6,199,85,.24)}
+    .nav-cta:hover,.line-btn:hover,.primary-btn:hover{transform:translateY(-2px);filter:brightness(1.04)}
+    .hero{padding:92px 0 72px;position:relative;overflow:hidden}
+    .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:46px;align-items:center}
+    .eyebrow{display:inline-flex;align-items:center;gap:9px;color:#cce7ff;border:1px solid rgba(47,128,237,.35);background:rgba(47,128,237,.12);border-radius:999px;padding:7px 13px;font-size:12px;font-weight:800;letter-spacing:.08em;margin-bottom:24px}
+    .pulse{width:8px;height:8px;border-radius:50%;background:var(--cyan);box-shadow:0 0 0 7px rgba(48,213,200,.13)}
+    h1{font-size:clamp(38px,6vw,70px);line-height:1.08;letter-spacing:-.04em;color:#fff;margin-bottom:22px}
+    h1 span{background:linear-gradient(90deg,#fff,var(--cyan));-webkit-background-clip:text;background-clip:text;color:transparent}
+    .hero-lead{font-size:17px;color:var(--muted);max-width:660px;margin-bottom:28px}
+    .hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:28px}
+    .primary-btn{background:linear-gradient(135deg,var(--green),#18d96a);color:#fff;padding:15px 26px;font-size:15px;box-shadow:0 14px 34px rgba(6,199,85,.26)}
+    .secondary-btn{display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--line2);background:rgba(255,255,255,.04);color:#dce8ff;border-radius:999px;padding:14px 24px;font-weight:800;transition:.2s ease}
+    .secondary-btn:hover{background:rgba(47,128,237,.12);transform:translateY(-2px)}
+    .micro-copy{display:flex;gap:10px;flex-wrap:wrap;color:var(--muted2);font-size:12px}
+    .micro-copy span{border:1px solid var(--line);background:rgba(255,255,255,.035);border-radius:999px;padding:5px 10px}
+    .hero-panel{background:linear-gradient(180deg,rgba(19,36,59,.88),rgba(10,22,40,.88));border:1px solid var(--line2);border-radius:32px;box-shadow:var(--shadow);padding:24px;position:relative;overflow:hidden}
+    .hero-panel::before{content:"";position:absolute;inset:-1px;background:radial-gradient(circle at 15% 0%,rgba(48,213,200,.16),transparent 34%),radial-gradient(circle at 100% 25%,rgba(47,128,237,.20),transparent 35%);pointer-events:none}
+    .panel-inner{position:relative;z-index:1}
+    .selector-title{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-bottom:16px}
+    .selector-title strong{font-size:18px;color:#fff}
+    .selector-title small{font-size:11px;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:4px 9px}
+    .route-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    .route-card{background:rgba(255,255,255,.055);border:1px solid var(--line);border-radius:18px;padding:16px;transition:.2s ease;min-height:130px;display:flex;flex-direction:column;justify-content:space-between}
+    .route-card:hover{transform:translateY(-3px);border-color:var(--line2);background:rgba(47,128,237,.11)}
+    .route-card .icon{width:38px;height:38px;border-radius:13px;display:grid;place-items:center;background:rgba(47,128,237,.18);margin-bottom:10px}
+    .route-card strong{font-size:14px;color:#fff}
+    .route-card p{font-size:12px;color:var(--muted);line-height:1.55;margin-top:4px}
+    .mini-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:14px}
+    .mini-stat{background:#081321;border:1px solid var(--line);border-radius:16px;padding:13px;text-align:center}
+    .mini-stat b{font-size:20px;color:#fff}.mini-stat span{display:block;color:var(--muted2);font-size:10px}
+    section{padding:86px 0}
+    .section-head{display:flex;justify-content:space-between;align-items:end;gap:28px;flex-wrap:wrap;margin-bottom:34px}
+    .tagline{color:var(--cyan);font-size:12px;font-weight:800;letter-spacing:.16em;margin-bottom:9px}
+    h2{font-size:clamp(30px,4vw,48px);line-height:1.25;letter-spacing:-.03em;color:#fff}
+    .section-desc{max-width:600px;color:var(--muted);font-size:15px}
+    .audience-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .aud-card{position:relative;overflow:hidden;background:linear-gradient(180deg,var(--card),#0a1524);border:1px solid var(--line);border-radius:var(--radius);padding:24px;min-height:270px;transition:.22s ease}
+    .aud-card:hover{transform:translateY(-4px);border-color:var(--line2);box-shadow:0 18px 42px rgba(0,0,0,.24)}
+    .aud-card.featured{border-color:rgba(48,213,200,.38);background:linear-gradient(180deg,rgba(19,36,59,.96),rgba(9,22,38,.96))}
+    .aud-card::after{content:"";position:absolute;right:-60px;top:-70px;width:170px;height:170px;border-radius:50%;background:rgba(47,128,237,.14)}
+    .aud-top{position:relative;z-index:1;display:flex;justify-content:space-between;gap:16px;margin-bottom:18px}
+    .aud-icon{width:48px;height:48px;border-radius:17px;background:linear-gradient(135deg,rgba(47,128,237,.24),rgba(48,213,200,.12));display:grid;place-items:center;font-size:23px;border:1px solid var(--line)}
+    .aud-num{color:var(--muted2);font-weight:800;font-size:12px}
+    .aud-card h3{position:relative;z-index:1;font-size:19px;line-height:1.45;margin-bottom:10px;color:#fff}
+    .aud-card p{position:relative;z-index:1;color:var(--muted);font-size:13.5px;line-height:1.75;margin-bottom:18px}
+    .bullet-list{position:relative;z-index:1;display:grid;gap:8px;margin-bottom:18px}
+    .bullet-list li{list-style:none;color:#c7d3e8;font-size:13px;display:flex;gap:8px}.bullet-list li::before{content:"✓";color:var(--cyan);font-weight:900}
+    .card-link{position:relative;z-index:1;color:#fff;font-weight:800;font-size:13px;display:inline-flex;gap:6px;align-items:center}
+    .dark-band{background:linear-gradient(180deg,rgba(11,22,40,.92),rgba(7,17,31,.96));border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+    .service-tabs{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:20px}
+    .tab-btn{border:1px solid var(--line);background:rgba(255,255,255,.04);color:var(--muted);border-radius:999px;padding:10px 14px;font-family:inherit;font-weight:800;cursor:pointer;transition:.2s ease}
+    .tab-btn.active,.tab-btn:hover{background:var(--blue);border-color:var(--blue);color:#fff}
+    .service-panel{display:none;grid-template-columns:.9fr 1.1fr;gap:20px;background:linear-gradient(180deg,var(--card),#0b1727);border:1px solid var(--line2);border-radius:30px;padding:24px;box-shadow:var(--shadow)}
+    .service-panel.active{display:grid}
+    .service-main{padding:10px}.service-main h3{font-size:29px;line-height:1.3;margin-bottom:12px}.service-main p{color:var(--muted);margin-bottom:18px}
+    .fit-tags{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:20px}.fit-tags span{background:rgba(48,213,200,.09);color:#d7fffb;border:1px solid rgba(48,213,200,.22);border-radius:999px;padding:6px 10px;font-size:12px;font-weight:800}
+    .service-details{display:grid;grid-template-columns:1fr 1fr;gap:12px}.detail-box{background:rgba(255,255,255,.045);border:1px solid var(--line);border-radius:18px;padding:18px}.detail-box h4{font-size:15px;margin-bottom:7px;color:#fff}.detail-box p{font-size:12.5px;color:var(--muted);line-height:1.7}
+    .compare{display:grid;grid-template-columns:1fr 1fr;gap:16px}.compare-card{border-radius:24px;padding:24px;border:1px solid var(--line);background:rgba(255,255,255,.04)}.compare-card.after{border-color:rgba(48,213,200,.34);background:linear-gradient(180deg,rgba(48,213,200,.08),rgba(255,255,255,.035))}.compare-card h3{font-size:20px;margin-bottom:14px}.compare-card ul{display:grid;gap:10px}.compare-card li{list-style:none;color:var(--muted);font-size:14px;display:flex;gap:8px}.compare-card.before li::before{content:"×";color:#ff7777;font-weight:900}.compare-card.after li::before{content:"✓";color:var(--cyan);font-weight:900}
+    .lead-kit{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.lead-card{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:20px;display:flex;flex-direction:column;min-height:240px}.lead-card b{font-size:15px;color:#fff;margin-bottom:8px}.lead-card p{color:var(--muted);font-size:12.5px;line-height:1.7;flex:1}.copy-btn{font-family:inherit;border:1px solid var(--line2);background:rgba(47,128,237,.13);color:#eaf4ff;border-radius:12px;padding:10px;margin-top:16px;font-weight:800;cursor:pointer;transition:.2s ease}.copy-btn:hover{background:var(--blue);color:white}
+    .flow{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.flow-step{background:linear-gradient(180deg,var(--card),#0a1524);border:1px solid var(--line);border-radius:22px;padding:22px;position:relative}.flow-step::before{content:attr(data-step);display:inline-grid;place-items:center;width:36px;height:36px;border-radius:50%;background:rgba(47,128,237,.18);border:1px solid var(--line2);color:#fff;font-weight:900;margin-bottom:16px}.flow-step h3{font-size:16px;margin-bottom:8px}.flow-step p{font-size:13px;color:var(--muted);line-height:1.75}
+    .proof-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px}.proof{padding:24px;background:rgba(255,255,255,.04);border:1px solid var(--line);border-radius:24px}.proof b{font-size:22px;color:#fff}.proof p{color:var(--muted);font-size:13px;margin-top:8px}
+    .faq-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.faq{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:20px}.faq h3{font-size:15px;margin-bottom:8px;color:#fff}.faq p{font-size:13px;color:var(--muted)}
+    .final-cta{padding:96px 0;text-align:center;background:radial-gradient(circle at center,rgba(47,128,237,.18),transparent 56%)}.final-box{max-width:850px;margin:0 auto;background:linear-gradient(180deg,rgba(19,36,59,.92),rgba(10,21,36,.92));border:1px solid var(--line2);border-radius:34px;padding:42px 24px;box-shadow:var(--shadow)}.final-box h2{margin-bottom:14px}.final-box p{color:var(--muted);max-width:660px;margin:0 auto 24px}.line-btn{background:var(--green);color:#fff;padding:15px 28px;font-size:15px;box-shadow:0 14px 32px rgba(6,199,85,.25)}.line-id{margin-top:13px;color:var(--muted2);font-size:12px}
+    footer{padding:34px 0;color:var(--muted2);border-top:1px solid var(--line);font-size:12px}.footer-grid{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}.disclaimer{max-width:820px;line-height:1.8}
+    .floating{position:fixed;right:18px;bottom:18px;z-index:60;display:flex;gap:10px;align-items:center}.float-msg{background:#fff;color:#0b1628;border-radius:16px;padding:10px 13px;font-size:12px;font-weight:800;box-shadow:0 12px 34px rgba(0,0,0,.22)}.float-line{width:58px;height:58px;border-radius:50%;background:var(--green);color:white;display:grid;place-items:center;font-weight:900;box-shadow:0 14px 36px rgba(6,199,85,.36)}
+    @media(max-width:980px){.hero-grid,.service-panel{grid-template-columns:1fr}.audience-grid{grid-template-columns:repeat(2,1fr)}.lead-kit,.flow{grid-template-columns:repeat(2,1fr)}.proof-grid{grid-template-columns:1fr}.nav-links{display:none}}
+    @media(max-width:640px){body{font-size:14px}.nav-inner{padding:12px 14px}.brand small{display:none}.hero{padding:62px 0 52px}.route-grid,.audience-grid,.service-details,.compare,.lead-kit,.flow,.faq-grid{grid-template-columns:1fr}.hero-panel{padding:18px;border-radius:24px}.mini-stats{grid-template-columns:1fr 1fr}.section-head{margin-bottom:24px}section{padding:62px 0}.floating{right:12px;bottom:12px}.float-msg{display:none}.float-line{width:54px;height:54px}}
+  </style>
+</head>
+<body>
+  <nav class="nav" aria-label="グローバルナビゲーション">
+    <div class="nav-inner">
+      <a class="brand" href="#top" aria-label="トップへ戻る">
+        <span class="brand-mark">↗</span>
+        <span>相談コンシェルジュ<small>Recruit / Career / Real Estate</small></span>
+      </a>
+      <div class="nav-links">
+        <a href="#audience">対象者</a>
+        <a href="#services">相談領域</a>
+        <a href="#templates">相談例</a>
+        <a href="#faq">FAQ</a>
+      </div>
+      <a class="nav-cta" href="https://line.me/ti/p/RcaLvLMD37" target="_blank" rel="noopener">LINEで相談</a>
+    </div>
+  </nav>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <div class="eyebrow"><span class="pulse"></span>採用・人材・不動産の総合相談窓口</div>
+          <h1>誰に相談すべきか分からない課題を、<span>最短で正しい専門家へ。</span></h1>
+          <p class="hero-lead">求人広告の媒体選定、ATS・AI面接、採用代行、転職支援、人材紹介、不動産の賃貸・売買まで。あなたの状況を整理して、最適な選択肢につなぎます。</p>
+          <div class="hero-actions">
+            <a class="primary-btn" href="https://line.me/ti/p/RcaLvLMD37" target="_blank" rel="noopener">LINEで無料相談する</a>
+            <a class="secondary-btn" href="#templates">相談例を見る</a>
+          </div>
+          <div class="micro-copy">
+            <span>初回相談無料</span>
+            <span>LINEで完結</span>
+            <span>法人・個人どちらも対応</span>
+            <span>必要な時だけ専門先へ接続</span>
+          </div>
+        </div>
+
+        <aside class="hero-panel" aria-label="相談ルート選択">
+          <div class="panel-inner">
+            <div class="selector-title">
+              <strong>あなたはどれに近いですか？</strong>
+              <small>最短30秒で選択</small>
+            </div>
+            <div class="route-grid">
+              <a class="route-card" href="#recruitment">
+                <div><div class="icon">📣</div><strong>採用したい企業・人事</strong><p>求人広告、ATS、AI面接、RPO、媒体選定を相談。</p></div>
+                <span class="card-link">詳しく見る →</span>
+              </a>
+              <a class="route-card" href="#partner">
+                <div><div class="icon">🤝</div><strong>採用代行・コンサル</strong><p>クライアントの媒体掲載や採用ツール導入を相談。</p></div>
+                <span class="card-link">詳しく見る →</span>
+              </a>
+              <a class="route-card" href="#career">
+                <div><div class="icon">💼</div><strong>仕事を探している人</strong><p>転職、就職、職務経歴書、面接対策を相談。</p></div>
+                <span class="card-link">詳しく見る →</span>
+              </a>
+              <a class="route-card" href="#realestate">
+                <div><div class="icon">🏠</div><strong>不動産を探す・売る</strong><p>賃貸、売買、投資用、引越し、ライフラインを相談。</p></div>
+                <span class="card-link">詳しく見る →</span>
+              </a>
+            </div>
+            <div class="mini-stats">
+              <div class="mini-stat"><b>3</b><span>主軸領域</span></div>
+              <div class="mini-stat"><b>1</b><span>相談窓口</span></div>
+              <div class="mini-stat"><b>LINE</b><span>問い合わせ</span></div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="audience">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="tagline">TARGET</div>
+            <h2>採用・仕事探し・不動産まで、<br>相談内容に合わせて案内。</h2>
+          </div>
+          <p class="section-desc">求人広告を出したい企業、人材を探している企業、仕事を探している人、賃貸・売買を考えている人まで、内容に合わせて相談できます。</p>
+        </div>
+        <div class="audience-grid">
+          <article id="recruitment" class="aud-card featured">
+            <div class="aud-top"><div class="aud-icon">📣</div><div class="aud-num">01</div></div>
+            <h3>求人広告・採用ツールを検討している人事担当者</h3>
+            <p>媒体が多すぎて選べない、応募数が足りない、採用管理が煩雑という企業向け。</p>
+            <ul class="bullet-list"><li>求人広告媒体の比較・選定</li><li>ATS・LINE採用・AI面接</li><li>採用RPO・採用ブランディング</li></ul>
+            <a class="card-link" href="#templates">相談例を見る →</a>
+          </article>
+          <article id="partner" class="aud-card">
+            <div class="aud-top"><div class="aud-icon">🧑‍💻</div><div class="aud-num">02</div></div>
+            <h3>フリーランス人事・採用代行・採用コンサル</h3>
+            <p>クライアントの求人広告掲載や採用DX商材を、外部パートナー経由で提案したい方向け。</p>
+            <ul class="bullet-list"><li>媒体掲載の相談窓口</li><li>採用課題ごとの商材整理</li><li>企業への提案支援</li></ul>
+            <a class="card-link" href="#templates">相談例を見る →</a>
+          </article>
+          <article id="career" class="aud-card">
+            <div class="aud-top"><div class="aud-icon">💼</div><div class="aud-num">03</div></div>
+            <h3>転職・就職・高時給案件を探している人</h3>
+            <p>今すぐ転職したい人だけでなく、職務経歴書や面接に不安がある人も相談可能。</p>
+            <ul class="bullet-list"><li>求人紹介・キャリア相談</li><li>職務経歴書の改善</li><li>面接対策・推薦サポート</li></ul>
+            <a class="card-link" href="#templates">相談例を見る →</a>
+          </article>
+          <article class="aud-card">
+            <div class="aud-top"><div class="aud-icon">🏢</div><div class="aud-num">04</div></div>
+            <h3>人材を探している企業・経営者</h3>
+            <p>採用したいが媒体・人材紹介・RPOのどれを使うべきか分からない企業向け。</p>
+            <ul class="bullet-list"><li>採用手法の整理</li><li>人材紹介・求人広告の使い分け</li><li>採用コストの見直し</li></ul>
+            <a class="card-link" href="#templates">相談例を見る →</a>
+          </article>
+          <article id="realestate" class="aud-card featured">
+            <div class="aud-top"><div class="aud-icon">🏠</div><div class="aud-num">05</div></div>
+            <h3>賃貸・売買・引越しを考えている人</h3>
+            <p>物件探し、見積もり比較、売買、投資用不動産、引越し周辺手続きまで相談。</p>
+            <ul class="bullet-list"><li>賃貸・売買・土地探し</li><li>見積もり比較・初期費用相談</li><li>引越し・電気ガス水道</li></ul>
+            <a class="card-link" href="#templates">相談例を見る →</a>
+          </article>
+          <article class="aud-card">
+            <div class="aud-top"><div class="aud-icon">🚀</div><div class="aud-num">06</div></div>
+            <h3>店舗・副業・事業まわりを相談したい人</h3>
+            <p>店舗内装、SNS運用、補助金、営業商材など、事業成長に必要な周辺領域も整理。</p>
+            <ul class="bullet-list"><li>SNS・動画・サイト制作</li><li>補助金・融資・経理系</li><li>光回線・電気・ガス</li></ul>
+            <a class="card-link" href="#templates">相談例を見る →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="dark-band">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="tagline">SERVICE</div>
+            <h2>今の状況を聞いて、<br>必要な選択肢を整理します。</h2>
+          </div>
+          <p class="section-desc">求人広告、人材紹介、転職支援、不動産、採用ツールなど、目的・期限・予算・希望条件を確認したうえで、合う相談先を案内します。</p>
+        </div>
+
+        <div class="service-tabs" role="tablist" aria-label="サービス切り替え">
+          <button class="tab-btn active" data-tab="ad">求人広告・採用DX</button>
+          <button class="tab-btn" data-tab="career">人材紹介・転職支援</button>
+          <button class="tab-btn" data-tab="real">不動産</button>
+          <button class="tab-btn" data-tab="biz">事業支援・生活インフラ</button>
+        </div>
+
+        <article class="service-panel active" id="panel-ad">
+          <div class="service-main">
+            <div class="tagline">RECRUITING MEDIA / HR TECH</div>
+            <h3>求人広告と人事系ツールを、採用課題から逆算して提案。</h3>
+            <p>中途・新卒・アルバイト・地方媒体・検索エンジン系に加えて、ATS、LINE採用、AI面接、採用RPO、採用ブランディングまで相談可能。媒体を売る前に「採用人数・ターゲット・予算・運用体制」を整理します。</p>
+            <div class="fit-tags"><span>人事担当</span><span>経営者</span><span>採用代行</span><span>採用コンサル</span><span>フリーランス人事</span></div>
+            <a class="line-btn" href="https://line.me/ti/p/RcaLvLMD37" target="_blank" rel="noopener">採用相談をLINEで送る</a>
+          </div>
+          <div class="service-details">
+            <div class="detail-box"><h4>求人広告媒体</h4><p>中途・新卒・アルバイト・地方媒体・検索エンジン系など、採用目的に応じた掲載先を整理。</p></div>
+            <div class="detail-box"><h4>ダイレクトリクルーティング</h4><p>スカウト媒体や配信運用の選定。人材要件と返信率を前提に導入可否を判断。</p></div>
+            <div class="detail-box"><h4>ATS・LINE採用・AI面接</h4><p>応募管理、面接日程調整、初期選考などの工数削減に向くツールを整理。</p></div>
+            <div class="detail-box"><h4>採用RPO・ブランディング</h4><p>採用サイト、説明会動画、SNS運用、口コミ対策、ピッチ資料なども相談対象。</p></div>
+          </div>
+        </article>
+
+        <article class="service-panel" id="panel-career">
+          <div class="service-main">
+            <div class="tagline">CAREER / TALENT</div>
+            <h3>仕事を探す人と、人材を探す企業の両方を支援。</h3>
+            <p>求職者にはキャリア相談・職務経歴書・面接対策を、企業には採用要件整理・人材紹介・採用手法の見直しを提供。片側だけでなく、双方の条件整理を重視します。</p>
+            <div class="fit-tags"><span>転職希望者</span><span>第二新卒</span><span>高時給案件希望</span><span>採用企業</span><span>経営者</span></div>
+            <a class="line-btn" href="https://line.me/ti/p/RcaLvLMD37" target="_blank" rel="noopener">人材相談をLINEで送る</a>
+          </div>
+          <div class="service-details">
+            <div class="detail-box"><h4>転職・就職相談</h4><p>転職するか迷っている段階でも相談可能。希望条件や経験を整理。</p></div>
+            <div class="detail-box"><h4>書類・面接サポート</h4><p>職務経歴書の見せ方、面接での伝え方、推薦時の打ち出しを整理。</p></div>
+            <div class="detail-box"><h4>企業向け人材紹介</h4><p>必要な職種・スキル・予算に応じて、人材紹介や別手法も含めて検討。</p></div>
+            <div class="detail-box"><h4>採用コストの見直し</h4><p>求人広告、人材紹介、RPOを比較し、採用単価と運用負荷を整理。</p></div>
+          </div>
+        </article>
+
+        <article class="service-panel" id="panel-real">
+          <div class="service-main">
+            <div class="tagline">REAL ESTATE</div>
+            <h3>賃貸・売買・投資・引越しまで、窓口を一本化。</h3>
+            <p>物件を探している人、すでに見積もりを持っている人、売買を検討している人向け。初期費用や条件の整理、物件確認、引越し周辺の手続きまでまとめて相談できます。</p>
+            <div class="fit-tags"><span>賃貸</span><span>売買</span><span>投資用不動産</span><span>注文住宅</span><span>引越し</span></div>
+            <a class="line-btn" href="https://line.me/ti/p/RcaLvLMD37" target="_blank" rel="noopener">不動産相談をLINEで送る</a>
+          </div>
+          <div class="service-details">
+            <div class="detail-box"><h4>賃貸探し</h4><p>希望エリア・家賃・初期費用・審査面を整理し、条件に合う提案先へ接続。</p></div>
+            <div class="detail-box"><h4>売買・土地・注文住宅</h4><p>購入、売却、土地探し、注文住宅など、目的に合わせて相談先を整理。</p></div>
+            <div class="detail-box"><h4>見積もり比較</h4><p>すでに見積書がある場合も、項目の妥当性や代替案を確認。</p></div>
+            <div class="detail-box"><h4>引越し・ライフライン</h4><p>引越し、電気、ガス、水道、ネット回線など、周辺手続きもまとめて相談。</p></div>
+          </div>
+        </article>
+
+        <article class="service-panel" id="panel-biz">
+          <div class="service-main">
+            <div class="tagline">BUSINESS SUPPORT</div>
+            <h3>事業・店舗・生活まわりの相談も、必要に応じて接続。</h3>
+            <p>店舗内装、補助金・融資、経理、SNS運用、サイト制作、動画制作、光回線・電気・ガスなど、採用・不動産の周辺で発生しやすいニーズもまとめて整理できます。</p>
+            <div class="fit-tags"><span>店舗開業</span><span>SNS運用</span><span>サイト制作</span><span>補助金</span><span>生活インフラ</span></div>
+            <a class="line-btn" href="https://line.me/ti/p/RcaLvLMD37" target="_blank" rel="noopener">事業相談をLINEで送る</a>
+          </div>
+          <div class="service-details">
+            <div class="detail-box"><h4>店舗・内装・開業</h4><p>物件探しから内装、集客導線まで開業前後の課題を整理。</p></div>
+            <div class="detail-box"><h4>SNS・制作・広告運用</h4><p>採用広報、店舗集客、LP、動画、バナー、SNS運用など。</p></div>
+            <div class="detail-box"><h4>補助金・融資・経理</h4><p>事業フェーズに応じて、専門家相談が必要な論点を整理。</p></div>
+            <div class="detail-box"><h4>光回線・電気・ガス</h4><p>法人・個人どちらも、生活や店舗運営に必要なインフラ相談に対応。</p></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="tagline">CASE</div>
+            <h2>こんな相談ができます。</h2>
+          </div>
+          <p class="section-desc">目的がはっきりしていなくても大丈夫です。今の状況を聞いたうえで、採用・人材・不動産・事業支援のどこから進めるべきか整理します。</p>
+        </div>
+        <div class="compare">
+          <div class="compare-card after">
+            <h3>法人・人事向け</h3>
+            <ul>
+              <li>求人広告を出したいが、媒体選びに迷っている</li>
+              <li>応募数が足りず、求人原稿やスカウト運用を見直したい</li>
+              <li>ATS、LINE採用、AI面接などの採用ツールを比較したい</li>
+              <li>採用代行・RPO・採用広報を検討している</li>
+            </ul>
+          </div>
+          <div class="compare-card after">
+            <h3>個人・生活向け</h3>
+            <ul>
+              <li>転職・就職について相談したい</li>
+              <li>職務経歴書や面接対策を相談したい</li>
+              <li>賃貸・購入・売却・土地探しを相談したい</li>
+              <li>引越し、電気、ガス、ネット回線もまとめて相談したい</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="templates" class="dark-band">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="tagline">LINE MESSAGE EXAMPLE</div>
+            <h2>LINEで送る内容に迷ったら、<br>このまま送れます。</h2>
+          </div>
+          <p class="section-desc">内容がまとまっていなくても大丈夫です。近い相談例をコピーして、分かる範囲だけ追記して送ってください。</p>
+        </div>
+        <div class="lead-kit">
+          <article class="lead-card">
+            <b>求人広告・採用DX相談</b>
+            <p>人事担当・経営者・採用代行向け。求人広告、ATS、AI面接、RPOなどをまとめて相談できます。</p>
+            <button class="copy-btn" data-message="求人広告・採用DXの相談希望です。採用したい職種、採用人数、予算感、現在使っている媒体・ツールを整理して相談したいです。">この内容でコピー</button>
+          </article>
+          <article class="lead-card">
+            <b>転職・就職相談</b>
+            <p>仕事探し、職務経歴書、面接対策、求人紹介の相談をしたい方向け。</p>
+            <button class="copy-btn" data-message="転職・就職相談希望です。現在の職種、希望職種、希望勤務地、希望年収、転職時期を整理して相談したいです。">この内容でコピー</button>
+          </article>
+          <article class="lead-card">
+            <b>人材を探している企業</b>
+            <p>求人広告・人材紹介・RPOなど、どの手法がよいか相談したい企業向け。</p>
+            <button class="copy-btn" data-message="人材採用の相談希望です。採用したい職種、人数、勤務地、予算、採用期限を整理して相談したいです。">この内容でコピー</button>
+          </article>
+          <article class="lead-card">
+            <b>不動産相談</b>
+            <p>賃貸、売買、投資用、引越し、初期費用見積もりの相談をしたい方向け。</p>
+            <button class="copy-btn" data-message="不動産相談希望です。賃貸・購入・売却のどれか、希望エリア、予算、時期、すでに見積書があるかを整理して相談したいです。">この内容でコピー</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="tagline">FLOW</div>
+            <h2>相談から紹介までの流れ。</h2>
+          </div>
+        </div>
+        <div class="flow">
+          <div class="flow-step" data-step="1"><h3>LINEで相談</h3><p>該当するこの内容でコピーして送信。まだ内容が固まっていなくても問題ありません。</p></div>
+          <div class="flow-step" data-step="2"><h3>状況を整理</h3><p>採用・転職・不動産など、目的、期限、予算、希望条件を整理します。</p></div>
+          <div class="flow-step" data-step="3"><h3>専門先へ接続</h3><p>必要に応じて、求人広告、人材紹介、不動産、採用DXなどの専門パートナーにつなぎます。</p></div>
+          <div class="flow-step" data-step="4"><h3>比較・判断</h3><p>条件や見積もりを確認し、自分に合う選択肢を判断。無理な契約は不要です。</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="dark-band">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="tagline">SUPPORT</div>
+            <h2>相談できること。</h2>
+          </div>
+        </div>
+        <div class="proof-grid">
+          <div class="proof"><b>採用相談</b><p>求人広告、ダイレクトリクルーティング、ATS、AI面接、採用RPOなどを相談できます。</p></div>
+          <div class="proof"><b>人材相談</b><p>仕事を探している人の転職・就職相談、人材を探している企業の採用相談に対応します。</p></div>
+          <div class="proof"><b>不動産相談</b><p>賃貸、売買、土地探し、見積もり比較、引越し、ライフラインまで相談できます。</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="tagline">FAQ</div>
+            <h2>よくある質問。</h2>
+          </div>
+        </div>
+        <div class="faq-grid">
+          <div class="faq"><h3>相談だけでも大丈夫ですか？</h3><p>大丈夫です。まずは状況整理を行い、必要に応じて専門パートナーをご案内します。</p></div>
+          <div class="faq"><h3>法人でも個人でも相談できますか？</h3><p>はい。採用したい企業、仕事を探している個人、不動産を検討している個人・法人のいずれも相談可能です。</p></div>
+          <div class="faq"><h3>求人広告の媒体選定もできますか？</h3><p>中途・新卒・アルバイト・地方媒体・検索エンジン系など、目的に応じて選定を支援します。</p></div>
+          <div class="faq"><h3>ATSやAI面接も相談できますか？</h3><p>採用管理、面接日程調整、AI面接、LINE採用など、一部の人事系ツールも相談対象です。</p></div>
+          <div class="faq"><h3>不動産はどこまで対応できますか？</h3><p>賃貸、売買、土地、投資用不動産、引越し、ライフラインなど、内容に応じて相談先を整理します。</p></div>
+          <div class="faq"><h3>費用はかかりますか？</h3><p>初回相談は無料です。各サービスの費用や契約条件は、提携先・案件内容により異なります。</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-cta">
+      <div class="container">
+        <div class="final-box">
+          <div class="tagline">CONTACT</div>
+          <h2>迷っている段階で、<br>一度LINEしてください。</h2>
+          <p>「求人広告を出したい」「人材を紹介してほしい」「転職したい」「物件を探したい」など、内容がざっくりでも問題ありません。送る内容に迷う場合は、上の相談例をコピーしてください。</p>
+          <a class="line-btn" href="https://line.me/ti/p/RcaLvLMD37" target="_blank" rel="noopener">LINEで無料相談する</a>
+          <div class="line-id">LINE ID：fudo39</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <strong style="color:#fff">相談コンシェルジュ</strong><br>
+        Recruit / Career / Real Estate
+      </div>
+      <p class="disclaimer">本サイトは各種サービスの相談・紹介窓口です。料金、審査、契約条件、対応可否、成果は案件内容・提携先・時期により異なります。採用成功、転職成功、物件契約、費用削減等を保証するものではありません。正式な条件は各提供会社の案内・契約内容をご確認ください。</p>
+    </div>
+  </footer>
+
+  <div class="floating" aria-label="固定LINE相談ボタン">
+    <div class="float-msg">LINEで無料相談</div>
+    <a class="float-line" href="https://line.me/ti/p/RcaLvLMD37" target="_blank" rel="noopener">LINE</a>
+  </div>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"ProfessionalService",
+    "name":"採用・人材・不動産の相談窓口",
+    "description":"求人広告、採用DX、人材紹介、転職支援、不動産相談を専門パートナーにつなぐ相談窓口。",
+    "areaServed":"JP",
+    "availableLanguage":"Japanese",
+    "serviceType":["求人広告相談","採用支援","人材紹介","転職支援","不動産相談","採用DX相談"],
+    "url":"",
+    "sameAs":["https://line.me/ti/p/RcaLvLMD37"]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {"@type":"Question","name":"相談だけでも大丈夫ですか？","acceptedAnswer":{"@type":"Answer","text":"初回相談は可能です。状況整理を行い、必要に応じて専門パートナーを案内します。"}},
+      {"@type":"Question","name":"求人広告の媒体選定もできますか？","acceptedAnswer":{"@type":"Answer","text":"中途、新卒、アルバイト、地方媒体、検索エンジン系など、目的に応じた選定を支援します。"}},
+      {"@type":"Question","name":"ATSやAI面接も相談できますか？","acceptedAnswer":{"@type":"Answer","text":"採用管理、面接日程調整、AI面接、LINE採用など、一部の人事系ツールも相談対象です。"}},
+      {"@type":"Question","name":"不動産はどこまで対応できますか？","acceptedAnswer":{"@type":"Answer","text":"賃貸、売買、土地、投資用不動産、引越し、ライフラインなど、内容に応じて相談先を整理します。"}}
+    ]
+  }
+  </script>
+  <script>
+    const tabButtons = document.querySelectorAll('.tab-btn');
+    const panels = {
+      ad: document.getElementById('panel-ad'),
+      career: document.getElementById('panel-career'),
+      real: document.getElementById('panel-real'),
+      biz: document.getElementById('panel-biz')
+    };
+    tabButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        tabButtons.forEach(b => b.classList.remove('active'));
+        Object.values(panels).forEach(panel => panel.classList.remove('active'));
+        btn.classList.add('active');
+        panels[btn.dataset.tab].classList.add('active');
+      });
+    });
+
+    document.querySelectorAll('.copy-btn').forEach(button => {
+      button.addEventListener('click', async () => {
+        const text = button.dataset.message;
+        try {
+          await navigator.clipboard.writeText(text);
+          const before = button.textContent;
+          button.textContent = 'コピーしました';
+          setTimeout(() => button.textContent = before, 1500);
+        } catch (error) {
+          alert(text);
+        }
+      });
+    });
+  </script>
+</body>
+</html>
