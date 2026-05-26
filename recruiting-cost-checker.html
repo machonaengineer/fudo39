@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>求人広告費ムダ診断｜応募単価・面接単価・採用単価を30秒で計算</title>
+  <meta name="description" content="月間求人広告費、応募数、面接設定数、採用数を入力するだけで、応募単価・面接単価・採用単価・採用ボトルネックを30秒で診断。求人広告、ATS、LINE採用、AI面接、RPOの見直し相談へつなげます。" />
+  <meta name="robots" content="index,follow" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="求人広告費ムダ診断｜採用単価を30秒で見える化" />
+  <meta property="og:description" content="求人広告費・応募数・面接数・採用数から、応募単価・面接単価・採用単価と改善ポイントを自動計算。" />
+  <meta property="og:locale" content="ja_JP" />
+  <meta name="theme-color" content="#0B1220" />
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{--bg:#07111f;--bg2:#0b1628;--card:#0f1b2d;--card2:#13243b;--blue:#2f80ed;--cyan:#30d5c8;--green:#06C755;--gold:#facc15;--red:#fb7185;--text:#f5f7fb;--muted:#a8b3c7;--muted2:#74819a;--line:rgba(255,255,255,.1);--line2:rgba(47,128,237,.34);--shadow:0 22px 70px rgba(0,0,0,.34);--radius:24px;--max:1180px}
+    html{scroll-behavior:smooth}
+    body{font-family:"Meiryo","Yu Gothic",Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.75;font-size:15px;overflow-x:hidden}
+    body::before{content:"";position:fixed;inset:0;z-index:-2;background:radial-gradient(circle at 18% 8%,rgba(47,128,237,.28),transparent 30%),radial-gradient(circle at 86% 12%,rgba(48,213,200,.16),transparent 30%),radial-gradient(circle at 50% 100%,rgba(250,204,21,.12),transparent 36%),linear-gradient(180deg,#07111f 0%,#080e1a 100%)}
+    a{color:inherit;text-decoration:none}.container{max-width:var(--max);margin:0 auto;padding:0 22px}.nav{position:sticky;top:0;z-index:50;background:rgba(7,17,31,.84);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}.nav-inner{max-width:1240px;margin:0 auto;padding:14px 22px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{display:flex;align-items:center;gap:10px;font-weight:900}.brand-mark{width:34px;height:34px;border-radius:12px;background:linear-gradient(135deg,var(--blue),var(--cyan));display:grid;place-items:center;box-shadow:0 10px 30px rgba(47,128,237,.35)}.nav-links{display:flex;align-items:center;gap:18px;color:var(--muted);font-size:13px}.nav-links a:hover{color:#fff}.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border-radius:999px;font-weight:900;white-space:nowrap;transition:.2s ease;cursor:pointer;border:0}.btn:hover{transform:translateY(-2px);filter:brightness(1.04)}.btn-primary{background:linear-gradient(135deg,var(--green),#18d96a);color:#fff;padding:15px 26px;box-shadow:0 14px 34px rgba(6,199,85,.26)}.btn-secondary{border:1px solid var(--line2);background:rgba(255,255,255,.04);color:#dce8ff;padding:14px 24px}.hero{padding:82px 0 54px}.hero-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:34px;align-items:start}.eyebrow{display:inline-flex;align-items:center;gap:9px;color:#cce7ff;border:1px solid rgba(47,128,237,.35);background:rgba(47,128,237,.12);border-radius:999px;padding:7px 13px;font-size:12px;font-weight:900;letter-spacing:.08em;margin-bottom:22px}.pulse{width:8px;height:8px;border-radius:50%;background:var(--cyan);box-shadow:0 0 0 7px rgba(48,213,200,.13)}h1{font-size:clamp(38px,6vw,68px);line-height:1.08;letter-spacing:-.05em;margin-bottom:20px}h1 span{background:linear-gradient(90deg,#fff,var(--cyan));-webkit-background-clip:text;background-clip:text;color:transparent}.lead{font-size:17px;color:var(--muted);max-width:680px;margin-bottom:26px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:18px}.micro{display:flex;gap:10px;flex-wrap:wrap;color:var(--muted2);font-size:12px}.micro span{border:1px solid var(--line);background:rgba(255,255,255,.035);border-radius:999px;padding:5px 10px}.panel{background:linear-gradient(180deg,rgba(19,36,59,.9),rgba(10,22,40,.9));border:1px solid var(--line2);border-radius:32px;box-shadow:var(--shadow);padding:24px}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.field{display:grid;gap:7px}.field label{font-size:12px;color:#dce8ff;font-weight:900}.field input,.field select{width:100%;border:1px solid var(--line);background:#081321;color:#fff;border-radius:14px;padding:13px 12px;font-size:15px;outline:none}.field input:focus,.field select:focus{border-color:var(--cyan)}.full{grid-column:1/-1}.result-card{margin-top:18px;padding:20px;border-radius:22px;background:rgba(255,255,255,.055);border:1px solid var(--line)}.result-title{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-bottom:14px}.grade{font-size:28px;font-weight:950;color:var(--gold)}.metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.metric{background:#081321;border:1px solid var(--line);border-radius:16px;padding:14px;text-align:center}.metric b{font-size:22px;display:block}.metric span{font-size:11px;color:var(--muted2)}.advice{margin-top:14px;color:var(--muted);font-size:14px}.section{padding:70px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:28px;flex-wrap:wrap;margin-bottom:28px}.tagline{color:var(--cyan);font-size:12px;font-weight:900;letter-spacing:.16em;margin-bottom:9px}h2{font-size:clamp(30px,4vw,46px);line-height:1.25;letter-spacing:-.03em}.section-desc{max-width:620px;color:var(--muted)}.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.card{background:linear-gradient(180deg,var(--card),#0a1524);border:1px solid var(--line);border-radius:var(--radius);padding:24px}.card h3{font-size:19px;margin-bottom:10px}.card p,.card li{color:var(--muted);font-size:14px}.card ul{display:grid;gap:8px;margin-top:10px}.card li{list-style:none;display:flex;gap:8px}.card li::before{content:"✓";color:var(--cyan);font-weight:900}.cta{padding:84px 0;text-align:center;background:radial-gradient(circle at center,rgba(47,128,237,.18),transparent 56%)}.cta-box{max-width:880px;margin:0 auto;background:linear-gradient(180deg,rgba(19,36,59,.92),rgba(10,21,36,.92));border:1px solid var(--line2);border-radius:34px;padding:42px 24px;box-shadow:var(--shadow)}.cta-box p{color:var(--muted);max-width:680px;margin:10px auto 24px}.notice{border:1px solid rgba(250,204,21,.24);background:rgba(250,204,21,.08);color:#fde68a;border-radius:18px;padding:16px;margin-top:18px;font-size:13px}footer{padding:34px 0;color:var(--muted2);border-top:1px solid var(--line);font-size:12px}.footer-grid{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}.floating{position:fixed;right:18px;bottom:18px;z-index:60;display:flex;gap:10px;align-items:center}.float-msg{background:#fff;color:#0b1628;border-radius:16px;padding:10px 13px;font-size:12px;font-weight:900;box-shadow:0 12px 34px rgba(0,0,0,.22)}.float-line{width:58px;height:58px;border-radius:50%;background:var(--green);color:white;display:grid;place-items:center;font-weight:900;box-shadow:0 14px 36px rgba(6,199,85,.36)}
+    @media(max-width:980px){.hero-grid,.grid-2{grid-template-columns:1fr}.grid-3{grid-template-columns:repeat(2,1fr)}.nav-links{display:none}.metrics{grid-template-columns:1fr}}
+    @media(max-width:640px){body{font-size:14px}.nav-inner{padding:12px 14px}.brand small{display:none}.hero{padding:58px 0 44px}.form-grid,.grid-3{grid-template-columns:1fr}.panel{padding:18px;border-radius:24px}.section{padding:56px 0}.float-msg{display:none}.float-line{width:54px;height:54px}}
+  </style>
+</head>
+<body>
+  <nav class="nav" aria-label="グローバルナビゲーション">
+    <div class="nav-inner">
+      <a class="brand" href="index.html" aria-label="相談コンシェルジュ トップへ">
+        <span class="brand-mark">↗</span>
+        <span>相談コンシェルジュ<small>Recruit Cost Checker</small></span>
+      </a>
+      <div class="nav-links">
+        <a href="#checker">診断</a>
+        <a href="#bottleneck">改善領域</a>
+        <a href="#flow">相談の流れ</a>
+        <a href="https://machonaengineer.github.io/xplan-partner/" target="_blank" rel="noopener">キャリリンク</a>
+      </div>
+      <a class="btn btn-primary" href="https://line.me/ti/p/RcaLvLMD37" target="_blank" rel="noopener">LINEで相談</a>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <div class="eyebrow"><span class="pulse"></span>求人広告費・採用単価の無料診断</div>
+          <h1>求人広告費、<span>ムダ打ちしてませんか？</span></h1>
+          <p class="lead">月間広告費・応募数・面接設定数・採用数を入力するだけで、応募単価、面接単価、採用単価、改善すべきボトルネックを30秒で見える化します。</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="#checker">今すぐ診断する</a>
+            <a class="btn btn-secondary" href="https://line.me/ti/p/RcaLvLMD37" target="_blank" rel="noopener">診断結果を相談する</a>
+          </div>
+          <div class="micro"><span>求人広告</span><span>ATS</span><span>LINE採用</span><span>AI面接</span><span>RPO</span></div>
+        </div>
+
+        <section id="checker" class="panel" aria-label="求人広告費診断フォーム">
+          <div class="eyebrow" style="margin-bottom:16px"><span class="pulse"></span>30秒診断</div>
+          <div class="form-grid">
+            <div class="field"><label for="cost">月間求人広告費</label><input id="cost" type="number" inputmode="numeric" value="300000" min="0" step="1000" /></div>
+            <div class="field"><label for="applications">月間応募数</label><input id="applications" type="number" inputmode="numeric" value="20" min="0" step="1" /></div>
+            <div class="field"><label for="interviews">面接設定数</label><input id="interviews" type="number" inputmode="numeric" value="8" min="0" step="1" /></div>
+            <div class="field"><label for="hires">採用数</label><input id="hires" type="number" inputmode="numeric" value="1" min="0" step="1" /></div>
+            <div class="field"><label for="role">採用職種</label><select id="role"><option>施工管理</option><option>エンジニア</option><option>営業</option><option>介護</option><option>飲食</option><option>販売</option><option>ドライバー</option><option>その他</option></select></div>
+            <div class="field"><label for="speed">応募者対応速度</label><select id="speed"><option value="same">当日</option><option value="next">翌日</option><option value="late">3日以上</option></select></div>
+            <div class="field full"><label for="media">主な掲載媒体</label><input id="media" type="text" value="Indeed / 求人ボックス / engage" /></div>
+          </div>
+          <div class="result-card" id="result">
+            <div class="result-title"><strong>診断結果</strong><span class="grade" id="grade">B</span></div>
+            <div class="metrics">
+              <div class="metric"><b id="cpa">15,000円</b><span>応募単価</span></div>
+              <div class="metric"><b id="cpi">37,500円</b><span>面接単価</span></div>
+              <div class="metric"><b id="cph">300,000円</b><span>採用単価</span></div>
+            </div>
+            <p class="advice" id="advice">応募は一定数あります。次は面接設定率と応募後の即時対応を見直すと改善余地があります。</p>
+            <div class="actions" style="margin-top:16px;margin-bottom:0">
+              <a class="btn btn-primary" href="https://line.me/ti/p/RcaLvLMD37" target="_blank" rel="noopener">この結果をLINEで相談する</a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <section id="bottleneck" class="section">
+      <div class="container">
+        <div class="section-head">
+          <div><div class="tagline">BOTTLENECK</div><h2>採用費のムダは、<br>だいたい3箇所に出ます。</h2></div>
+          <p class="section-desc">単に媒体を増やすより、応募前・応募後・面接後のどこで詰まっているかを分解する方が改善しやすいです。</p>
+        </div>
+        <div class="grid-3">
+          <article class="card"><h3>応募が少ない</h3><p>求人原稿、媒体選定、検索キーワード、写真、給与レンジ、訴求軸を見直します。</p><ul><li>求人広告の媒体選定</li><li>原稿改善・採用LP</li><li>Indeed / 求人ボックス運用</li></ul></article>
+          <article class="card"><h3>面接につながらない</h3><p>応募後の初動遅れ、連絡手段、日程調整の遅さ、候補者管理の抜け漏れを見ます。</p><ul><li>ATS導入</li><li>LINE採用</li><li>面接自動設定</li></ul></article>
+          <article class="card"><h3>採用できない</h3><p>面接設計、見極め基準、魅力づけ、歩留まり、内定承諾率を確認します。</p><ul><li>AI面接・適性診断</li><li>面接官トレーニング</li><li>RPO・採用代行</li></ul></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div><div class="tagline">SOLUTION</div><h2>診断後に提案できる領域。</h2></div>
+          <p class="section-desc">キャリリンクパートナー側の求人広告・人事系ツールカテゴリと接続し、法人営業の受け皿にできます。</p>
+        </div>
+        <div class="grid-2">
+          <article class="card"><h3>求人広告・媒体運用</h3><p>求人広告掲載代理、媒体比較、原稿改善、検索系媒体運用、職種別採用導線の見直し。</p></article>
+          <article class="card"><h3>採用DX・応募者対応</h3><p>ATS、LINE採用、面接自動設定、AI面接、スカウト運用、応募者対応代行。</p></article>
+          <article class="card"><h3>採用RPO・採用代行</h3><p>採用担当が足りない企業向けに、応募者対応、日程調整、スカウト、面接設計を支援。</p></article>
+          <article class="card"><h3>紹介パートナー制度</h3><p>採用に困っている企業を紹介できる人は、キャリリンクパートナー側で成果報酬化を狙えます。</p></article>
+        </div>
+        <div class="notice">報酬・支援範囲・成果条件は案件ごとに変動します。数値診断は概算であり、実際の採用成果を保証するものではありません。</div>
+      </div>
+    </section>
+
+    <section id="flow" class="section">
+      <div class="container">
+        <div class="section-head"><div><div class="tagline">FLOW</div><h2>相談の流れ。</h2></div></div>
+        <div class="grid-3">
+          <article class="card"><h3>1. 診断結果を確認</h3><p>広告費、応募数、面接数、採用数から現状の採用単価を確認します。</p></article>
+          <article class="card"><h3>2. LINEで共有</h3><p>診断結果と現在の媒体・職種・エリアをLINEで送ります。</p></article>
+          <article class="card"><h3>3. 改善施策を整理</h3><p>求人広告、ATS、LINE採用、AI面接、RPOなどから必要なものだけ整理します。</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container">
+        <div class="cta-box">
+          <div class="tagline">FREE CONSULTATION</div>
+          <h2>求人広告費を使っているなら、<br>まず採用単価を見える化。</h2>
+          <p>媒体を増やす前に、応募単価・面接単価・採用単価を分解してください。改善余地があれば、求人広告・採用DX・RPOのどこから着手すべきか整理します。</p>
+          <div class="actions" style="justify-content:center"><a class="btn btn-primary" href="https://line.me/ti/p/RcaLvLMD37" target="_blank" rel="noopener">LINEで無料相談する</a><a class="btn btn-secondary" href="https://machonaengineer.github.io/xplan-partner/" target="_blank" rel="noopener">キャリリンクを見る</a></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <a class="floating" href="https://line.me/ti/p/RcaLvLMD37" target="_blank" rel="noopener" aria-label="LINEで相談">
+    <span class="float-msg">診断結果を相談</span><span class="float-line">LINE</span>
+  </a>
+
+  <footer>
+    <div class="container footer-grid">
+      <div>© 2026 相談コンシェルジュ</div>
+      <div>求人広告費ムダ診断｜採用・人材・不動産の相談窓口</div>
+    </div>
+  </footer>
+
+  <script>
+    const yen = new Intl.NumberFormat('ja-JP', { style: 'currency', currency: 'JPY', maximumFractionDigits: 0 });
+    const els = ['cost','applications','interviews','hires','role','speed'].reduce((acc,id)=>{acc[id]=document.getElementById(id);return acc;},{});
+    const out = { cpa: document.getElementById('cpa'), cpi: document.getElementById('cpi'), cph: document.getElementById('cph'), grade: document.getElementById('grade'), advice: document.getElementById('advice') };
+    function safeDiv(a,b){ return b > 0 ? a / b : 0; }
+    function calc(){
+      const cost = Number(els.cost.value || 0);
+      const apps = Number(els.applications.value || 0);
+      const interviews = Number(els.interviews.value || 0);
+      const hires = Number(els.hires.value || 0);
+      const cpa = safeDiv(cost, apps);
+      const cpi = safeDiv(cost, interviews);
+      const cph = safeDiv(cost, hires);
+      const interviewRate = apps > 0 ? interviews / apps : 0;
+      const hireRate = interviews > 0 ? hires / interviews : 0;
+      out.cpa.textContent = apps > 0 ? yen.format(cpa) : '未算出';
+      out.cpi.textContent = interviews > 0 ? yen.format(cpi) : '未算出';
+      out.cph.textContent = hires > 0 ? yen.format(cph) : '未算出';
+      let grade = 'B';
+      let advice = '応募は一定数あります。次は面接設定率と応募後の即時対応を見直すと改善余地があります。';
+      if (apps === 0) { grade = '要確認'; advice = '応募が出ていないため、媒体選定・求人原稿・給与レンジ・検索キーワードの見直しが最優先です。'; }
+      else if (interviewRate < 0.25 || els.speed.value === 'late') { grade = 'C'; advice = '応募後の面接化で大きく損をしている可能性があります。ATS、LINE採用、日程調整、応募者対応速度の改善が優先です。'; }
+      else if (hires === 0 || hireRate < 0.12) { grade = 'C'; advice = '面接までは進んでいますが採用決定率が低い状態です。面接設計、魅力づけ、条件提示、選考スピードの見直しが必要です。'; }
+      else if (cph <= 200000 && interviewRate >= 0.35 && hireRate >= 0.18) { grade = 'A'; advice = '現状の採用効率は比較的良好です。次は媒体別の費用対効果、職種別の歩留まり、採用後定着まで見て改善します。'; }
+      else if (cph >= 800000) { grade = 'D'; advice = '採用単価が重く、媒体追加だけでは改善しにくい状態です。応募前・応募後・面接後のどこで詰まっているかを分解してください。'; }
+      out.grade.textContent = grade;
+      out.advice.textContent = advice;
+    }
+    Object.values(els).forEach(el => el.addEventListener('input', calc));
+    calc();
+  </script>
+</body>
+</html>
